@@ -1,0 +1,2 @@
+# desaseburing
+desaseburingilek
