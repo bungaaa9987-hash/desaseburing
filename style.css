@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    color: #183b2a;
+    background: #ffffff;
+}
+/* ================= NAVBAR ================= */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #183b2a;
+}
+.logo-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #176b45;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+.logo h3 {
+    font-size: 16px;
+}
+.logo span {
+    display: block;
+    color: #777;
+    font-size: 11px;
+}
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.nav-menu a {
+    text-decoration: none;
+    color: #183b2a;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.nav-menu a:hover {
+    color: #e3a62a;
+}
+/* ================= HERO ================= */
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(
+            rgba(0,50,30,0.70),
+            rgba(0,50,30,0.70)
+        ),
+        url("desa.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.hero-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 40px 25px;
+    color: white;
+}
+.small-title {
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+.hero h1 span {
+    color: #f4c45d;
+}
+.hero-content > p:not(.small-title) {
+    max-width: 650px;
+    font-size: 17px;
+    line-height: 1.8;
+}
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 28px;
+    background: #f4b942;
+    color: #183b2a;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.btn:hover {
+    transform: translateY(-3px);
+    background: #ffd36a;
+}
+/* ================= SECTION ================= */
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 90px 25px;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-title > p:first-child {
+    color: #e3a62a;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.section-title h2 {
+    font-size: 35px;
+    margin-top: 5px;
+}
+.section-title p:last-child {
+    color: #777;
+    margin-top: 10px;
+}
+/* ================= ABOUT ================= */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+.about-photo img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.15);
+}
+.about-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.about-text p {
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+/* ================= INFO ================= */
+.info-box {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+.info-box div {
+    flex: 1;
+    padding: 20px;
+    background: #f3f8f5;
+    border-radius: 15px;
+    text-align: center;
+}
+.info-box strong {
+    display: block;
+    color: #176b45;
+    font-size: 22px;
+}
+.info-box span {
+    color: #777;
+    font-size: 12px;
+}
+/* ================= POTENSI ================= */
+.potensi {
+    background: #f3f8f5;
+    padding: 90px 25px;
+}
+.cards {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+    gap: 20px;
+}
+.card {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-8px);
+}
+.icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+.card h3 {
+    margin-bottom: 10px;
+}
+.card p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.7;
+}
+/* ================= DUSUN ================= */
+.dusun {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 25px;
+}
+.dusun-card {
+    padding: 35px;
+    background: #176b45;
+    color: white;
+    border-radius: 18px;
+    text-align: center;
+    transition: 0.3s;
+}
+.dusun-card:hover {
+    transform: translateY(-5px);
+    background: #125536;
+}
+.dusun-card span {
+    color: #f4c45d;
+    font-weight: 700;
+}
+.dusun-card h3 {
+    margin-top: 8px;
+}
+/* ================= GALERI ================= */
+.gallery {
+    background: #f3f8f5;
+    padding: 90px 25px;
+}
+.gallery-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+    gap: 18px;
+}
+.gallery-item {
+    background: white;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.07);
+}
+.gallery-item img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+.gallery-item p {
+    text-align: center;
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.gallery-info {
+    font-size: 13px;
+}
+/* ================= KONTAK ================= */
+.contact {
+    padding: 90px 25px;
+}
+.contact-box {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr);
+    gap: 25px;
+}
+.contact-card {
+    padding: 30px;
+    background: #f3f8f5;
+    border-radius: 15px;
+    text-align: center;
+}
+.contact-icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.contact-card h3 {
+    margin-bottom: 12px;
+}
+.contact-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+/* ================= MAPS ================= */
+.maps-section {
+    padding: 90px 25px;
+    background: #f3f8f5;
+}
+.map-container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.12);
+}
+.map-container iframe {
+    display: block;
+    width: 100%;
+    border: 0;
+}
+.map-button {
+    text-align: center;
+    margin-top: 25px;
+}
+.map-button a {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #176b45;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.map-button a:hover {
+    background: #0f5134;
+    transform: translateY(-3px);
+}
+/* ================= FOOTER ================= */
+footer {
+    background: #123b28;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+.footer-content h2 {
+    margin-bottom: 10px;
+}
+.footer-content p {
+    color: #cbd9d1;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.copyright {
+    margin-top: 25px !important;
+}
+/* ================= TABLET ================= */
+@media (max-width: 900px) {
+    .nav-menu {
+        gap: 12px;
+    }
+    .nav-menu a {
+        font-size: 12px;
+    }
+    .hero h1 {
+        font-size: 50px;
+    }
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+    .gallery-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+/* ================= HP ================= */
+@media (max-width: 650px) {
+    .navbar {
+        padding: 12px 18px;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .hero {
+        min-height: 560px;
+    }
+    .hero h1 {
+        font-size: 40px;
+    }
+    .hero-content > p:not(.small-title) {
+        font-size: 14px;
+    }
+    .section {
+        padding: 65px 20px;
+    }
+    .section-title h2 {
+        font-size: 28px;
+    }
+    .about {
+        grid-template-columns: 1fr;
+    }
+    .about-photo img {
+        height: 300px;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .dusun {
+        grid-template-columns: 1fr;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    .contact-box {
+        grid-template-columns: 1fr;
+    }
+    .info-box {
+        flex-direction: column;
+    }
+    .map-container iframe {
+        height: 350px;
+    }
+}
